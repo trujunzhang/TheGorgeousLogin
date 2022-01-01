@@ -60,7 +60,8 @@ class _LoginPageState extends State<LoginPage>
                 padding: const EdgeInsets.only(top: 75.0),
                 child: Image(
                     height:
-                        MediaQuery.of(context).size.height > 800 ? 191.0 : 150,
+                        // MediaQuery.of(context).size.height > 800 ? 191.0 : 150,
+                        MediaQuery.of(context).size.height > 800 ? 191.0 : 120,
                     fit: BoxFit.fill,
                     image: const AssetImage('assets/img/login_logo.png')),
               ),
@@ -69,7 +70,7 @@ class _LoginPageState extends State<LoginPage>
                 child: _buildMenuBar(context),
               ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: PageView(
                   controller: _pageController,
                   physics: const ClampingScrollPhysics(),
